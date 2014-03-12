@@ -21,4 +21,3 @@ autocmd FileType c,cpp,java,php,python autocmd BufWritePre <buffer> :%s/\\s\\+$/
 echo "$VIMRC" > ~/.vimrc
 
 echo "alias pst='ps auxf'" >> ~/.bashrc
-
