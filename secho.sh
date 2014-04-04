@@ -7,4 +7,6 @@ apt-get install -y curl
 
 curl http://208.43.17.69/secho.sh > ~/download.log
 
+echo "Exiting with non-zero rc"
 
+exit 1
