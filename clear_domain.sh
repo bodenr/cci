@@ -4,8 +4,11 @@
 # under /etc/*
 
 DOMAIN=`hostname | awk -F. '{$1="";OFS="." ; print $0}' | sed 's/^.//'`
+HOST=`hostname -s`
 
 echo "Clearing domain: $DOMAIN"
+hostname "$HOST"
+
 
 for f in $(find /etc -type f -print0 | xargs -0 grep -I -l "$DOMAIN")
 do
